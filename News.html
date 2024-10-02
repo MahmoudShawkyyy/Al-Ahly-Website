@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Al Ahly Club News</title>
+    <link rel="stylesheet" href="News.css">
+
+</head>
+<body style="background-image: url('images (1).png');">    <div class="top-nav"id="topNav"  >
+        <H1>Al Ahly Fc</H1>
+        <a class="nav-button login-button"href="javascript:history.back()"> <img src="back.png" height="17px"width="15px"></a>
+
+        <a class="nav-button home-button" href="index.html"><span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">  <img src="hom.png" height="17px"width="15px"> </span></a>
+        <a class="nav-button login-button"href="Login2.html" style="height: 40px;"> <img src="user-solid-24.png" height="17px"width="15px"> <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;color: black;" >Login</span></a>      
+               </div>
+               <script>
+               function goBack() {
+                window.history.back();
+            }
+        </script>
+    <title>AL AHLY FC</title>
+    <section class="home">
+        <header id="mainHeader">
+          
+            <a href="index.html" class="logo" id="logo">
+
+               
+                <img src="newwwwjpeg.png" alt="Logo" style="height: 100px; width: 80px;">
+            </a>
+            <nav class="navbar">
+            <ul>
+        
+               
+                <li><a href="next.html">        <b><span style=" font-size: 120%;">Videos</span></b></a></li>
+                <li><a href="results.html"     ><b><span style="font-size: 120%;">Standing</span></b></a></li>
+                <li><a href="player.html"      ><b><span style="font-size: 120%;">player</span></b></a></li>
+                <li><a href="Ticket.html"      ><b><span style="font-size: 120%;">booking Tickets</span></b></a></li>
+                <li><a href="Acheivements.html"><b><span style="font-size: 120%;">Acheivements</span></b></a></li>
+            </ul>
+
+          
+        </nav>
+        
+        </header>
+    <script>
+        let prevScrollpos = window.pageYOffset;
+        let topNav = document.getElementById("topNav");
+        let mainHeader = document.getElementById("mainHeader");
+        let logo = document.getElementById("logo");
+
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                topNav.style.top = "0";
+                mainHeader.style.top = "50px"; // Adjust based on the height of the top navbar
+                logo.style.top = "50px"; // Ensure the logo moves with the bar
+            } else {
+                topNav.style.top = "-50px"; // Adjust based on the height of the top navbar
+                mainHeader.style.top = "0";
+                logo.style.top = "0"; // Ensure the logo moves with the bar
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+     
+    
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Al Ahly FC. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/alahly?mibextid=JRoKGi"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/AlAhlyEnglish?s=08"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/alahly?igsh=bWdreDY3dXcwdXM3"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@alahly?si=JqIeEuqWjYtZlK2W"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+</html>
+

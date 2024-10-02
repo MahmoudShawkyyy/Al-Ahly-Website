@@ -1,0 +1,75 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  input[type="submit"] {
+    font-size: 1.1em; 
+  }
+  input[type="text"]{
+    font-size: 1.5em; 
+  }
+  input[type="email"]{
+    font-size: 1.5em; 
+  }
+  input[type="number"]{
+    font-size: 1.5em; 
+  }
+  select{
+    font-size: 1.5em; 
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  background-color: rgb(226, 38, 38);
+    color: #333;
+  }
+  
+  header {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav {
+    background-color: #444;
+  }
+  
+  p{
+      background-color: white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #555;
+  }
+  
+  .active {
+    background-color: #555;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+  }

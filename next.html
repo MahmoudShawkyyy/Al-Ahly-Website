@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: iran_sans_medi;
+        }
+
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: #fff;
+            z-index: 1100;
+            background-color: #242424;
+        }
+
+        .top-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .top-nav h1 {
+            margin-right: auto;
+            color: #ffffff;
+        }
+
+        .nav-button {
+            background-color: #fffefe;
+            color: #aa1704;
+            padding: 5px 15px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.4s, color 0.4s;
+            text-decoration: none;
+        }
+
+        .nav-button:hover {
+            background-color: #a90c0c;
+            color: rgb(0, 0, 0);
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("images (1).png");
+            transition: 0.5s;
+            padding-top: 100px; /* Ensure space for fixed nav and header */
+        }
+
+        header {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            background: #aa1704;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+
+        header .logo {
+            position: fixed;
+            top: 60px; /* Adjusted to keep space for top-nav */
+            left: 50px;
+            font-size: 35px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            z-index: 1200; /* Ensure it is above the header */
+        }
+
+        header .logo img {
+            margin-left: 10px;
+            height: 60px;
+            width: auto;
+        }
+
+        header .navbar {
+            margin-left: auto;
+        }
+
+        header ul {
+            position: relative;
+            display: flex;
+        }
+
+        header ul li {
+            list-style-type: none;
+        }
+
+        header ul li a {
+            display: inline-block;
+            color: #fff;
+            font-weight: 400;
+            margin-left: 40px;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            padding: 10px 0;
+            transition: all 0.3s ease;
+        }
+
+        header ul li a:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        .thumb {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .thumb li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            transition: 0.5s;
+        }
+
+        .thumb li img {
+            max-width: 100px;
+        }
+        footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer-content p {
+    margin: 10px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #aa1704;
+}
+    </style>
+</head>
+<body style="background-image: url('images (1).png');">
+    <div class="top-nav"id="topNav"  >
+        <h1>Al Ahly Fc</h1>
+        <a class="nav-button login-button" href="javascript:history.back()"><img src="back.png" height="17px" width="15px"></a>
+        <a class="nav-button home-button" href="index.html"><img src="hom.png" height="17px" width="15px"></a>
+        <a class="nav-button login-button" href="login2.html" style="height: 40px;"><img src="user-solid-24.png" height="17px" width="15px"><span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: black;">Login</span></a>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <section class="home">
+        <header id="mainHeader">
+            <a href="index.html" class="logo" id="logo">
+
+                <img src="newwwwjpeg.png" alt="Logo" style="height: 100px; width: 80px;">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="News.html"><b><span style="font-size: 120%;">News</span></b></a></li>
+                    <li><a href="results.html"><b><span style="font-size: 120%;">Standing</span></b></a></li>
+                    <li><a href="player.html"><b><span style="font-size: 120%;">player</span></b></a></li>
+                    <li><a href="Ticket.html"><b><span style="font-size: 120%;">booking Tickets</span></b></a></li>
+                    <li><a href="Acheivements.html"><b><span style="font-size: 120%;">Acheivements</span></b></a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+    <br>
+        <h1><b>The Videos of the First Team</b></h1>
+<br><br>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/edPNkwIhSqc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/qG45EumA0qw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/F_L890NpYFE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/2BN3fxIByyw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/watch?v=M3E-JlQ8zvs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/BoHjjaTeJpc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ntw_7N7KSuA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/F9ePVHbrpLY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/mmqFor98H78" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/S541hjNLRhk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MFM4Trc8_Yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G4yqWIwDzZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dvAjGx3HG48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OH34NDSUc7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0AmT-oeux6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vr-wLKF9oU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+       </div>
+    </section>
+    <ul class="thumb">
+        <li><img src="Lipton-Logo-600x600-6509c0671b91d.png" width="50" height="50" ></li>
+        <li><img src="Coca-Cola-64f479504eed6.png"></li>
+        <li><img src="shelll-64f478bc0a087.png"  ></li>
+        <li><img src="almarasem-64f4786086886.png" width="50" height="50" ></li>
+        <li><img src="glc-64f477424d687.png" ></li>
+        <li><img src="fab-logo-new-64f476976fcad.png" ></li>
+        <li><img src="ET_Logo-64f475c40c5a5.png"></li>
+    </ul>
+</section>
+<script>
+let prevScrollpos = window.pageYOffset;
+let topNav = document.getElementById("topNav");
+let mainHeader = document.getElementById("mainHeader");
+let logo = document.getElementById("logo");
+
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        topNav.style.top = "0";
+        mainHeader.style.top = "50px"; // Adjust based on the height of the top navbar
+        logo.style.top = "50px"; // Ensure the logo moves with the bar
+    } else {
+        topNav.style.top = "-50px"; // Adjust based on the height of the top navbar
+        mainHeader.style.top = "0";
+        logo.style.top = "0"; // Ensure the logo moves with the bar
+    }
+    prevScrollpos = currentScrollPos;
+}
+</script>
+    
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Al Ahly FC. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/alahly?mibextid=JRoKGi"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/AlAhlyEnglish?s=08"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/alahly?igsh=bWdreDY3dXcwdXM3"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@alahly?si=JqIeEuqWjYtZlK2W"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,124 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body style="background-image: url('images (1).png');">
+        <div class="top-nav"id="topNav"  >
+            <H1  >Al Ahly Fc</H1>
+            <a class="nav-button login-button"href="javascript:history.back()"> <img src="back.png" height="17px"width="15px"></a>
+
+            <a class="nav-button home-button" href="index.html"><span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">  <img src="hom.png" height="17px"width="15px"> </span></a>
+            <a class="nav-button login-button"href="Login2.html" style="height: 40px;"> <img src="user-solid-24.png" height="17px"width="15px"> <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;color: black;" >Login</span></a>      
+                   </div>
+                   <script>
+                   function goBack() {
+                    window.history.back();
+                    
+                   
+        }
+        
+        
+            </script>
+        <title>AL AHLY FC</title>
+        <section class="home">
+            <header id="mainHeader">
+              
+                <a href="index.html" class="logo" id="logo">
+
+                   
+                    <img src="newwwwjpeg.png" alt="Logo" style="height: 100px; width: 80px;">
+                </a>
+                <nav class="navbar">
+                <ul>
+            
+                   
+                    <li><a href="News.html">        <b><span style=" font-size: 120%;">News</span></b></a></li>
+                    <li><a href="next.html">        <b><span style=" font-size: 120%;">Videos</span></b></a></li>
+                    <li><a href="results.html"     ><b><span style="font-size: 120%;">Standing</span></b></a></li>
+                    <li><a href="player.html"      ><b><span style="font-size: 120%;">player</span></b></a></li>
+                    <li><a href="Ticket.html"      ><b><span style="font-size: 120%;">booking Tickets</span></b></a></li>
+                    <li><a href="Acheivements.html"><b><span style="font-size: 120%;">Acheivements</span></b></a></li>
+                </ul>
+
+              
+            </nav>
+            
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2 style="color: aa1704;">Welcome To<br><span style="color:aa1704 ;">Our Club</span></h2><br>
+                    <p style="color: aa1704; font-size: 130%;">
+                        <B>    The Club Of The Century</B>
+                    </p>
+                    <a href="Nmatch.html"><B>Next Match</B></a>
+                </div>
+                <div class="imgBox">
+                    <img src="mkm.png" onclick="imgSlider('mkm.png'); " class="sports">
+                </div>
+            </div>
+            <ul class="thumbb">
+                <li><img src="https://alahly-images.s3.us-east-2.amazonaws.com/Honor/original/1-5f202e5526ce7.png" width="100" height="100" onclick="imgSlider('mkm.png'); changeColor('black');"></li>
+                <li><img src="https://alahly-images.s3.us-east-2.amazonaws.com/Honor/original/3-5f202ec7094b5.png"  width="100" height="100"onclick="imgSlider('mkm.png'); changeColor('grey');"></li>
+                <li><img src="https://alahly-images.s3.us-east-2.amazonaws.com/Honor/original/7-5f202fdec35ca.png" width="100" height="100" onclick="imgSlider('mkm.png'); changeColor('black');"></li>
+                <li><img src="https://alahly-images.s3.us-east-2.amazonaws.com/Honor/original/9-5f203043583c1.png"  width="100" height="100"onclick="imgSlider('mkm.png'); changeColor('grey');"></li>
+            </ul>
+        </section>
+        <script>
+           let prevScrollpos = window.pageYOffset;
+        let topNav = document.getElementById("topNav");
+        let mainHeader = document.getElementById("mainHeader");
+        let logo = document.getElementById("logo");
+
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                topNav.style.top = "0";
+                mainHeader.style.top = "50px"; // Adjust based on the height of the top navbar
+                logo.style.top = "50px"; // Ensure the logo moves with the bar
+            } else {
+                topNav.style.top = "-50px"; // Adjust based on the height of the top navbar
+                mainHeader.style.top = "0";
+                logo.style.top = "0"; // Ensure the logo moves with the bar
+            }
+            prevScrollpos = currentScrollPos;
+            
+        }
+        function imgSlider(someThing){
+        document.querySelector('.sports').src = someThing;
+    }
+    function changeColor(color){
+        const sec = document.querySelector('.home');
+        sec.style.background = color;
+    }
+    </script>
+    </body>
+   
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <ul class="thumb">
+        <li><img src="Lipton-Logo-600x600-6509c0671b91d.png" width="50" height="50"  ></li>
+        <li><img src="Coca-Cola-64f479504eed6.png" ></li>
+        <li><img src="shelll-64f478bc0a087.png" ></li>
+        <li><img src="almarasem-64f4786086886.png" width="50" height="50" ></li>
+        <li><img src="glc-64f477424d687.png"></li>
+        <li><img src="fab-logo-new-64f476976fcad.png" ></li>
+        <li><img src="ET_Logo-64f475c40c5a5.png" ></li>
+    </ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Al Ahly FC. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/alahly?mibextid=JRoKGi"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/AlAhlyEnglish?s=08"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/alahly?igsh=bWdreDY3dXcwdXM3"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@alahly?si=JqIeEuqWjYtZlK2W"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+</html>
+

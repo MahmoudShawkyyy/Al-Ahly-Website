@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Ticket for Al Ahly Matches</title>
+<head>
+    
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: iran_sans_medi;
+        }
+
+        .top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    z-index: 1100;
+background-color: #242424;
+}
+
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.top-nav h1 {
+margin-right: auto; 
+color: #ffffff;
+}
+
+.nav-button {
+    background-color: #fffefe;
+    color: #aa1704;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 16px;
+    border-radius:  5px;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+    text-decoration: none; /* Add this line */
+}
+
+
+
+.nav-button:hover {
+    background-color: #a90c0c;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+        
+
+       
+
+        header {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: #aa1704;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+header .logo {
+    position: fixed;
+    top: 60px; /* Adjusted to keep space for top-nav */
+    left: 50px;
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    z-index: 1200; /* Ensure it is above the header */
+}
+
+header .logo img {
+    margin-left: 10px;
+    height: 60px;
+    width: auto;
+}
+
+header .navbar {
+    margin-left: auto;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+ 
+        
+        
+        
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        form input, form select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .button {
+            background-color: #aa1704;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.4s;
+        }
+        .button:hover {
+            background-color: #900c3f;
+        }
+        .button:active {
+            background-color: #7b0a32;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        
+        #countdown {
+            font-size: 23px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            color: #aa1704;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .match-info {
+            text-align: center;
+            font-size: 25px;
+            color: #aa1704;
+            margin-top: 10px;
+        }
+        .thumb {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .thumb li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+           
+            transition: 0.5s;
+        }
+        .thumb li img {
+            max-width: 100px;
+        }
+        footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer-content p {
+    margin: 10px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #aa1704;
+}
+        
+    </style>
+</head>
+<body style="background-image: url('images (1).png');">
+    <div class="top-nav" id="topNav">
+        <H1>Al Ahly Fc</H1>
+        <a class="nav-button login-button"href="javascript:history.back()"> <img src="back.png" height="17px"width="15px"></a>
+
+        <a class="nav-button home-button" href="index.html"><span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">  <img src="hom.png" height="17px"width="15px"> </span></a>
+        <a class="nav-button login-button"href="Login2.html" style="height: 40px;"> <img src="user-solid-24.png" height="17px"width="15px"> <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;color: black;" >Login</span></a>      
+               </div>
+               <script>
+               function goBack() {
+                window.history.back();
+            }
+        </script>
+    <title>AL AHLY FC</title>
+    <section class="home">
+        <header id="mainHeader">
+          
+            <a href="index.html" class="logo" id="logo">
+
+               
+                <img src="newwwwjpeg.png" alt="Logo" id="logo" style="height: 100px; width: 80px;">
+            </a>
+            <nav class="navbar">
+            <ul>
+        
+               
+                <li><a href="News.html">        <b><span style=" font-size: 120%;">News</span></b></a></li>
+                <li><a href="next.html">        <b><span style=" font-size: 120%;">Videos</span></b></a></li>
+                <li><a href="results.html"     ><b><span style="font-size: 120%;">Standing</span></b></a></li>
+                <li><a href="player.html"      ><b><span style="font-size: 120%;">player</span></b></a></li>
+                <li><a href="Acheivements.html"><b><span style="font-size: 120%;">Acheivements</span></b></a></li>
+            </ul>
+
+          
+        </nav> 
+        </header>  
+      
+        <br><br>      
+        <br><br>      
+        <br><br>      
+        <br><br>  
+        
+        <div id="countdown"></div>
+        
+    <div class="match-info">
+        
+               
+              <b><span style="font-size: 250%">   vs </a>
+                <br>  </span> </b><b>Esperance de Tunis</b><br><br>
+            <span style ="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><b> عيش بالروح والعين والقلب ....... غني وشجع نادي الشعب</b></span>
+            <br><br><br>
+            <h1 style="color: black;"> <center>Booking Ticket</center></h1>
+    </div>
+    
+
+
+    <form id="ticketForm">
+        <label for="first-name"><h1>First Name:</h1></label>
+        <input type="text" id="first-name" name="first-name"><br>
+        <span class="error" id="first-name-error"></span>
+
+        <label for="last-name"><h1>Last Name:</h1></label>
+        <input type="text" id="last-name" name="last-name"><br>
+        <span class="error" id="last-name-error"></span>
+
+        <label for="email"><h1>Email:</h1></label>
+        <input type="email" id="email" name="email"><br>
+        <span class="error" id="email-error"></span>
+
+        <label for="password"><h1>Password:</h1></label>
+        <input type="password" id="password" name="password"><br>
+        <span class="error" id="password-error"></span>
+
+        <label for="phone"><h1>Phone Number:</h1></label>
+        <input type="tel" id="phone" name="phone"><br>
+        <span class="error" id="phone-error"></span>
+
+        <label for="id"><h1>FAN ID:</h1></label>
+        <input type="text" id="id" name="id"><br>
+        <span class="error" id="id-error"></span>
+        <label for="N_id"><h1>National ID:</h1></label>
+        <input type="text" id="N_id" name="N_id"><br>
+        <span class="error" id="N_id-error"></span>
+
+        <label for="match"><h1>Select Match:</h1></label>
+        <select id="match" name="match">
+            <option value="match1"></option>
+
+            <option value="match1">Al Ahly vs Esperance Sportive de Tunis (CAF Champions League - May 25, 2024)</option>
+            <option value="match2">Al Ahly vs Future FC (Egyptian Premier League - May 30, 2024)</option>
+            <option value="match3">Al Ahly vs Smouha (Egyptian Premier League - June 3, 2024)</option>
+            <option value="match4">Al Ahly vs National Bank of Egypt (Egyptian Premier League - June 7, 2024)</option>
+            <option value="match5">Al Ahly vs Zamalek (Egyptian Premier League - June 11, 2024)</option>
+        </select><br>
+        <span class="error" id="match-error"></span>
+
+        <label for="tickets"><h1>Number of Tickets:</h1></label>
+        <input type="number"  id="tickets" name="tickets" min="1" max="4"><br>
+        <span class="error "  id="tickets-error"></span>
+<br>
+<script>
+    function changeText() {
+        document.getElementById('changeable-text').innerHTML = 'تسعين دقيقة تشجيع بس';
+    }
+</script>
+  <button type="submit" class="button" onclick="changeText()"><span>Submit</span></button>
+    <span id="changeable-text" class="text-change" style="font-size: 150%;color: #aa1704;font: bold;">دوس عشان تشجع الاحمر</span>    </form>
+
+    <script>
+        let prevScrollpos = window.pageYOffset;
+        let topNav = document.getElementById("topNav");
+        let mainHeader = document.getElementById("mainHeader");
+        let logo = document.getElementById("logo");
+
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                topNav.style.top = "0";
+                mainHeader.style.top = "50px"; // Adjust based on the height of the top navbar
+                logo.style.top = "50px"; // Ensure the logo moves with the bar
+            } else {
+                topNav.style.top = "-50px"; // Adjust based on the height of the top navbar
+                mainHeader.style.top = "0";
+                logo.style.top = "0"; // Ensure the logo moves with the bar
+            }
+            prevScrollpos = currentScrollPos;
+        }
+        var nextMatchDate = new Date("May 25, 2024 18:00:00").getTime();
+    
+        var countdownFunction = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = nextMatchDate - now;
+    
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            document.getElementById("countdown").innerHTML = "Time until next match: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "The match has started!";
+            }
+        }, 1000);
+    
+        document.getElementById('ticketForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var isValid = true;
+    
+            var firstName = document.getElementById('first-name').value;
+            if (!/^[a-zA-Z]+$/.test(firstName)) {
+                document.getElementById('first-name-error').textContent = 'First name must contain only alphabetic characters';
+                isValid = false;
+            } else {
+                document.getElementById('first-name-error').textContent = '';
+            }
+
+            var lastName = document.getElementById('last-name').value;
+            if (!/^[a-zA-Z]+$/.test(lastName)) {
+                document.getElementById('last-name-error').textContent = 'Last name must contain only alphabetic characters';
+                isValid = false;
+            } else {
+                document.getElementById('last-name-error').textContent = '';
+            }
+    
+            var email = document.getElementById('email').value;
+            if (email == '') {
+                document.getElementById('email-error').textContent = 'Email is required';
+                isValid = false;
+            } else {
+                document.getElementById('email-error').textContent = '';
+            }
+    
+            var password = document.getElementById('password').value;
+            if (password == '') {
+                document.getElementById('password-error').textContent = 'Password is required';
+                isValid = false;
+            } else {
+                document.getElementById('password-error').textContent = '';
+            }
+    
+            var phone = document.getElementById('phone').value;
+            if (phone == '' || phone.length != 11 || isNaN(phone)) {
+                document.getElementById('phone-error').textContent = 'Phone number must be 11 digits';
+                isValid = false;
+            } else {
+                document.getElementById('phone-error').textContent = '';
+            }
+            var nationalId = document.getElementById('N_id').value;
+    if (nationalId == '' || nationalId.length != 14 || isNaN(nationalId)) {
+        document.getElementById('N_id-error').textContent = 'National ID number must be 14 digits';
+        isValid = false;
+    } else {
+        document.getElementById('N_id-error').textContent = '';
+    }
+           
+            if (id == '') {
+                document.getElementById('id-error').textContent = 'ID is required';
+                isValid = false;
+            } else {
+                document.getElementById('id-error').textContent = '';
+            }
+    
+            var match = document.getElementById('match').value;
+            if (match == '') {
+                document.getElementById('match-error').textContent = 'Match selection is required';
+                isValid = false;
+            } else {
+                document.getElementById('match-error').textContent = '';
+            }
+    
+            var tickets = document.getElementById('tickets').value;
+            if (tickets == '' || tickets < 1 || tickets > 4) {
+                document.getElementById('tickets-error').textContent = 'Please select between 1 and 4 tickets';
+                isValid = false;
+            } else {
+                document.getElementById('tickets-error').textContent = '';
+            }
+            
+            if (isValid) {
+                alert('submitted successfully!');
+            }
+        });
+    </script>
+    <ul class="thumb">
+        <li><img src="Lipton-Logo-600x600-6509c0671b91d.png" width="50" height="50"  ></li>
+        <li><img src="Coca-Cola-64f479504eed6.png" ></li>
+        <li><img src="shelll-64f478bc0a087.png" ></li>
+        <li><img src="almarasem-64f4786086886.png" width="50" height="50" ></li>
+        <li><img src="glc-64f477424d687.png"></li>
+        <li><img src="fab-logo-new-64f476976fcad.png" ></li>
+        <li><img src="ET_Logo-64f475c40c5a5.png" ></li>
+    </ul>
+    
+        </body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Al Ahly FC. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/alahly?mibextid=JRoKGi"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/AlAhlyEnglish?s=08"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/alahly?igsh=bWdreDY3dXcwdXM3"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@alahly?si=JqIeEuqWjYtZlK2W"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+</html>

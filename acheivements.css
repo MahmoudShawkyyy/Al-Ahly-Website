@@ -1,0 +1,235 @@
+
+.trophies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
+
+  
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iran_sans_medi;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    z-index: 1100;
+    background-color: #242424;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.top-nav h1 {
+    margin-right: auto;
+    color: #ffffff;
+}
+.nav-button {
+    background-color: #fffefe;
+    color: #aa1704;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #a90c0c;
+    color: rgb(0, 0, 0);
+}
+header {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: #aa1704;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+header .logo {
+    position: fixed;
+    top: 60px; /* Adjusted to keep space for top-nav */
+    left: 50px;
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    z-index: 1200; /* Ensure it is above the header */
+}
+
+header .logo img {
+    margin-left: 10px;
+    height: 60px;
+    width: auto;
+}
+
+header .navbar {
+    margin-left: auto;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.honors__wrapper {
+    padding: 20px;
+    border: 20px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #ffffff; 
+    background-image: url("images (1).png");
+
+
+}
+
+.honors__wrapper:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.honors__title {
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-weight: bold; 
+    text-align: center; 
+}
+
+
+.honors__image {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.honors_count {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 10px;
+}
+
+.tooltip-help {
+    background-color: #a80404;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tooltip-details {
+    display: none;
+    background-image: url("images (1).png");
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    position: absolute;
+    color: black;
+}
+
+.tooltip-container:hover .tooltip-details {
+    display: block;
+}
+
+.thumb {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+   
+    transition: 0.5s;
+}
+.thumb li img {
+    max-width: 100px;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer-content p {
+    margin: 10px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #aa1704;
+}

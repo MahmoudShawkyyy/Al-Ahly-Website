@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+    <style>
+		
+
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: iran_sans_medi;
+        }
+
+        .top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    z-index: 1100;
+background-color: #242424;
+}
+
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.top-nav h1 {
+margin-right: auto; 
+color: #ffffff;
+}
+.nav-button {
+    background-color: #fffefe;
+    color: #aa1704;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 16px;
+    border-radius:  5px;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+    text-decoration: none; /* Add this line */
+}
+
+
+
+.nav-button:hover {
+    background-color: #a90c0c;
+    color: rgb(0, 0, 0);
+
+}
+
+
+.ptable table{
+	width: 70%;
+margin: 30px auto;
+border-collapse: collapse;
+}
+
+.ptable{
+width: 100%;}
+
+th, td {
+padding: 10px;
+}
+
+th{
+background-color: black;
+color: white;
+}
+
+
+
+.wpos{
+text-align: center;
+}
+
+.wpos td{
+color: rgb(255, 0, 0);
+}
+
+.pos{
+text-align: center;
+}
+
+.pos td{
+color: rgb(0, 0, 0);
+}
+
+table .col{
+border-bottom: 1px solid #000000;
+}
+
+.wpos:hover{
+background-color: rgb(92, 255, 47);
+}
+
+.wpos:hover td{
+color: #000000;
+}
+
+.pos:hover{
+background-color: rgb(255, 255, 255);
+}
+
+.pos:hover td{
+color: #000000;
+}
+header {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: #aa1704;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+header .logo {
+    position: fixed;
+    top: 60px; /* Adjusted to keep space for top-nav */
+    left: 50px;
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    z-index: 1200; /* Ensure it is above the header */
+}
+
+header .logo img {
+    margin-left: 10px;
+    height: 60px;
+    width: auto;
+}
+
+header .navbar {
+    margin-left: auto;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.thumb {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .thumb li
+		 {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+           
+            transition: 0.5s;
+        }
+        .thumb li img 
+		{
+            max-width: 100px;
+        }
+		footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer-content p {
+    margin: 10px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #aa1704;
+}
+
+	</style>
+</head>
+<body style="background-image: url('images (1).png');">
+	<div class="top-nav"id="topNav"  >
+				<H1>Al Ahly Fc</H1>
+		<a class="nav-button login-button"href="javascript:history.back()"> <img src="back.png" height="17px"width="15px"></a>
+
+		<a class="nav-button home-button" href="index.html"><span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">  <img src="hom.png" height="17px"width="15px"> </span></a>
+		<a class="nav-button login-button"href="login2.html" style="height: 40px;"> <img src="user-solid-24.png" height="17px"width="15px"> <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;color: black;" >Login</span></a>      
+			   </div>
+			   <script>
+			   function goBack() {
+				window.history.back();
+			}
+		</script>
+	<title>AL AHLY FC</title>
+	<section class="home">
+		<header id="mainHeader">
+		  
+			<a href="index.html" class="logo" id="logo">
+
+			   
+				<img src="newwwwjpeg.png" alt="Logo" style="height: 100px; width: 80px;">
+			</a>
+			<nav class="navbar">
+			<ul>
+		
+			   
+				<li><a href="News.html">        <b><span style=" font-size: 120%;">News</span></b></a></li>
+				<li><a href="next.html">        <b><span style=" font-size: 120%;">Videos</span></b></a></li>
+				<li><a href="player.html"      ><b><span style="font-size: 120%;">player</span></b></a></li>
+				<li><a href="Ticket.html"      ><b><span style="font-size: 120%;">booking Tickets</span></b></a></li>
+				<li><a href="Acheivements.html"><b><span style="font-size: 120%;">Acheivements</span></b></a></li>
+			</ul>
+
+		  
+		</nav>
+		
+		</header>
+	</section>
+	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>
+	<center><img src="eg2.png" alt="logo"></center>
+	<h1><center>Egyptian premier League
+	</center></h1>
+   
+    
+<div class="ptable">
+  
+					<table>
+						<tr class="col">
+							<th>#</th>
+							<th>Team</th>
+							<th>GP</th>
+							<th>W</th>
+							<th>D</th>
+							<th>L</th>
+							<th>GD</th>
+							<th>PTS</th>
+						</tr>
+						<tr class="wpos">
+							<td>1</td>
+							<td><img src="egypt-al-masry-club.webp"  height="25" width="25">   Al Masry Club</td>
+							<td>2</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>5</td>
+							<td>6</td>
+						</tr>
+						<tr class="wpos">
+							<td>2</td>
+							<td><img src="egypt-enppi-club.webp"  height="25" width="25">   ENPPI Club</td>
+							<td>2</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>4</td>
+							<td>6</td>
+						</tr>
+						<tr class="wpos">
+							<td>3</td>
+							<td><img src="egypt-al-assiouty-sport.png"  height="25" width="25">   Al Assiouty Sport</td>
+							<td>2</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>4</td>
+							<td>4</td>
+						</tr>
+						<tr class="wpos">
+							<td>4</td>
+							<td><img src="egypt-al-ittihad-al-iskandary.webp"  height="25" width="25">   Al Ittihad Al Iskandary</td>
+							<td>2</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>4</td>
+						</tr>
+						<tr class="pos">
+							<td>5</td>
+							<td><img src="egypt-fc-masr.webp"  height="25" width="25">  FC Masr</td>
+							<td>2</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>3</td>
+						</tr>
+						<tr class="pos">
+							<td>6</td>
+							<td><img src="egypt-el-gounah.webp"  height="25" width="25">  El Gounah</td>
+							<td>3</td>
+							<td>1</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-1</td>
+							<td>3</td>
+						</tr>
+						<tr class="pos">
+							<td>7</td>
+							<td><img src="egypt-smouha-sc.webp"  height="25" width="25">  Smouha SC</td>
+							<td>2</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>-2</td>
+							<td>3</td>
+						</tr>
+						<tr class="pos">
+							<td>8</td>
+							<td><img src="egypt-ceramica-cleopatra-fc.webp"  height="25" width="25">  Ceramica Cleopatra FC</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1</td>
+						</tr>
+						<tr class="pos">
+							<td>9</td>
+							<td><img src="egypt-talaea-el-gaish.webp"  height="25" width="25">  Tala'ea El Gaish</td>
+							<td>2</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1</td>
+							<td>-1</td>
+							<td>1</td>
+						</tr>
+						<tr class="pos">
+							<td>10</td>
+							<td><img src="egypt-coca-cola-fc.webp"  height="25" width="25">  Coca-Cola FC</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-4</td>
+							<td>0</td>
+						</tr>
+						<tr class="pos">
+							<td>11</td>
+							<td><img src="egypt-baladiyyat-al-mehalla.webp"  height="25" width="25">  Baladiyyat Al Mehalla</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-5</td>
+							<td>0</td>
+						</tr>
+                        <tr class="pos">
+							<td>12</td>
+							<td><img src="egypt-zamalek-sc.webp"  height="25" width="25">  Zamalek SC</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-5</td>
+							<td>0</td>
+						</tr>
+                        <tr class="pos">
+							<td>13</td>
+							<td><img src="egypt-national-bank-of-egypt-sc.webp"  height="25" width="25">  National Bank of Egypt SC</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-5</td>
+							<td>0</td>
+						</tr>
+                        <tr class="pos">
+							<td>14</td>
+							<td><img src="egypt-al-ahly-sc.webp"  height="25" width="25">  Al Ahly SC</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-5</td>
+							<td>0</td>
+						</tr>
+                        <tr class="pos">
+							<td>15</td>
+							<td><img src="egypt-ismaily-sc.webp"  height="25" width="25">  Ismaily SC</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-5</td>
+							<td>0</td>
+						</tr>
+                        <tr class="pos">
+							<td>16</td>
+							<td><img src="egypt-pharco-fc.webp"  height="25" width="25">  Pharco FC</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-5</td>
+							<td>0</td>
+						</tr>
+                        <tr class="pos">
+							<td>17</td>
+							<td><img src="egypt-al-mokawloon-al-arab.webp"  height="25" width="25">  Al Mokawloon Al Arab</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-5</td>
+							<td>0</td>
+						</tr>
+                        <tr class="pos">
+							<td>18</td>
+							<td><img src="egypt-el-daklyeh-fc.webp"  height="25" width="25">  El Daklyeh FC</td>
+							<td>2</td> 
+							<td>0</td>
+							<td>0</td>
+							<td>2</td>
+							<td>-5</td>
+							<td>0</td>
+						</tr>
+					</table>
+</div>
+<br><br><br><br>
+<br><br>
+
+<ul class="thumb">
+	<li><img src="Lipton-Logo-600x600-6509c0671b91d.png" width="50" height="50"  ></li>
+	<li><img src="Coca-Cola-64f479504eed6.png" ></li>
+	<li><img src="shelll-64f478bc0a087.png" ></li>
+	<li><img src="almarasem-64f4786086886.png" width="50" height="50" ></li>
+	<li><img src="glc-64f477424d687.png"></li>
+	<li><img src="fab-logo-new-64f476976fcad.png" ></li>
+	<li><img src="ET_Logo-64f475c40c5a5.png" ></li>
+</ul>
+</body>
+<script>
+let prevScrollpos = window.pageYOffset;
+let topNav = document.getElementById("topNav");
+let mainHeader = document.getElementById("mainHeader");
+let logo = document.getElementById("logo");
+
+window.onscroll = function() {
+	let currentScrollPos = window.pageYOffset;
+	if (prevScrollpos > currentScrollPos) {
+		topNav.style.top = "0";
+		mainHeader.style.top = "50px"; // Adjust based on the height of the top navbar
+		logo.style.top = "50px"; // Ensure the logo moves with the bar
+	} else {
+		topNav.style.top = "-50px"; // Adjust based on the height of the top navbar
+		mainHeader.style.top = "0";
+		logo.style.top = "0"; // Ensure the logo moves with the bar
+	}
+	prevScrollpos = currentScrollPos;
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<footer>
+	<div class="footer-content">
+		<p>&copy; 2024 Al Ahly FC. All Rights Reserved.</p>
+		<div class="social-icons">
+			<a href="https://www.facebook.com/alahly?mibextid=JRoKGi"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/AlAhlyEnglish?s=08"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/alahly?igsh=bWdreDY3dXcwdXM3"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@alahly?si=JqIeEuqWjYtZlK2W"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+</footer>
+</html>
